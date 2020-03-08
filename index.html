@@ -152,6 +152,96 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-json schema" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/08/json%20schema/">json schema</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/08/json%20schema/" class="archive-article-date">
+  	<time datetime="2020-03-07T23:31:18.929Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="json-schema"><a href="#json-schema" class="headerlink" title="json schema"></a>json schema</h1><p>Json Schema 定义了一套词汇和规则，这套词汇和规则用来定义 Json 元数据，且元数据也是通过 Json 数据形式表达的。Json 元数据定义了 Json 数据需要满足的规范，规范包括成员、结构、类型、约束等。</p>
+<h2 id="简单类型"><a href="#简单类型" class="headerlink" title="简单类型"></a>简单类型</h2><ul>
+<li><p>字符串</p>
+<p>1.type：string</p>
+<p>2.字符串长度: minLength, maxLength</p>
+<p>3.正则表达式：pattern</p>
+<p>4.字符串 format：可以通过 Json Schema 内建的一些类型，对字符串的格式做规范，例如电子邮件、日期、域名等。</p>
+<ul>
+<li><p>数值<br>1.number 和 integer（integer 只能是整数）</p>
+<p>2.数值满足倍数：multipleOf</p>
+<p>3.数值范围：<br>minimum, maximum, exclusiveMinimum, exclusiveMaximum</p>
+</li>
+</ul>
+</li>
+<li><p>复合类型</p>
+<p>1.数组：用来限制成员类型、是否允许额外成员、最小元素个数、最大元素个数、是否允许元素重复。</p>
+<p>2.对象：</p>
+<pre><code>properties规定对象各成原所应遵循的Schema</code></pre></li>
+</ul>
+<pre><code>patternProperties 批量定义成员 SchemapatternProperties
+
+必须出现的成员required
+
+成员依赖关系dependencies
+
+属性个数的限制minProperties, maxProperties</code></pre><ul>
+<li>逻辑组合： allOf, anyOf, oneOf, not</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/08/json%20schema/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-http中header" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
